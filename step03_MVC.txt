@@ -1,0 +1,41 @@
+step03_MVC
+
+[학습]
+1. 패턴(pattern)
+	- 표준화된 구조
+	- 필요성
+		- 개발의 안정성 제공
+		- 유지보수, 확장성 개발 가능
+	- 주요 패턴
+		- DTO [Data Transfer Object]
+			- 정형화된 구조로 다른 메소드(로직)간 전달
+			- VO [Value Object]
+			- model.domain의 구조
+			- 명명규칙
+				Student.java
+				StudentDTO.java
+				StudentVO.java
+				StudentBean.java
+				
+		- DAO [Data Access Object]
+			- DB와 직접적 통신으로 데이터에 접근 및 조작 가능
+		
+		- MVC 
+			M : Model
+				- 핵심, Business
+			V : View
+				- 화면 처리 로직
+			C : Controller
+				- 조절 및 제어 기능
+				
+		- Singleton
+			- 강제적으로 서버에 객체 수를 하나로만 제어
+	
+	- step03_MVC
+		- M : StudentModel + Student
+		- V : Start/End View
+		- C : StudentController		
+
+				
+				
+				
